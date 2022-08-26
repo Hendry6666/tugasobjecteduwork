@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const car = {
+            type : "flat",
+            model : "F500",
+            color : "white",
+            spek : function(){
+                return "type: " + this.type + ", model: " + this.model + "color: " +this.model;
+            }
+        };
+        document.getElementById('demo').innerHTML = "the cas type is " + car.spek();
+
+        // document.getElementById('demo').innerHTML = "the cas type is " +
+        // car.type + " and the model " + car.model + "also the color is " + car.color;
+    </script>
+</body>
+</html>
